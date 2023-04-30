@@ -13,7 +13,11 @@ export class OldestPersonComponent implements OnInit{
   name!: Name;
   constructor(private service: PersonService) {}
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.name = new Name();
+  }
+
+  getData(): void {
     this.service.getNameOfOldestPerson().subscribe(data => {
       this.name = data;
       console.log(data);

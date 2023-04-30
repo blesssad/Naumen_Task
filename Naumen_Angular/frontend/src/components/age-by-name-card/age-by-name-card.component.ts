@@ -17,7 +17,11 @@ export class AgeByNameCardComponent implements OnInit{
 
   constructor(private service: PersonService) {}
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.age = new Age();
+  }
+
+  getData(): void {
     // @ts-ignore
     this.service.getAgeByName(this.name).subscribe(result => {
       this.age = result;
