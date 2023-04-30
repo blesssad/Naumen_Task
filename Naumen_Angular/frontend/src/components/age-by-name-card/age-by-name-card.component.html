@@ -6,7 +6,7 @@
 
 <div [className]="'root'">
 
-  <form #myForm="ngForm" (ngSubmit)="ngOnInit()">
+  <form #myForm="ngForm" (ngSubmit)="getData()">
   <input type="text" name="name" [(ngModel)]="name">
   <button type="submit">Отправить</button>
   </form>

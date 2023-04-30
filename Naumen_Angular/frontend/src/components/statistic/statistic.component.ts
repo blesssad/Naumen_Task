@@ -11,10 +11,15 @@ import {StatisticService} from "../../services/statistic-service";
   providedIn: 'root'
 })
 export class StatisticComponent implements OnInit{
-  dataList: PersonAndFrequency[] = [];
+  dataList!: PersonAndFrequency[];
 
   constructor(private service: StatisticService) { }
-  ngOnInit(): void {
+
+  ngOnInit() {
+    this.dataList = [];
+  }
+
+  getData(): void {
     this.service.getStatistic().subscribe(data => {
       this.dataList = [];
       for (let i=0; i< data.length;i++){
