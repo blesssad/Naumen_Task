@@ -1,0 +1,17 @@
+<div>
+
+<div [className]="'text'">
+  Получить возраст по имени
+</div>
+
+<div [className]="'root'">
+
+  <form #myForm="ngForm" (ngSubmit)="ngOnInit()">
+  <input type="text" name="name" [(ngModel)]="name">
+  <button type="submit">Отправить</button>
+  </form>
+
+  <div [className]="'result'" *ngIf="age">Возраст: {{age.age}}</div>
+</div>
+
+</div>

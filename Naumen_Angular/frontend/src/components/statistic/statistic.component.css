@@ -1,0 +1,40 @@
+.root{
+  background-color: #C2C2C2;
+  height: 256px;
+  width: 512px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 13px 13px 12px -6px rgba(34, 60, 80, 0.2);
+}
+
+.text{
+  margin-bottom: 12px;
+  font-family: "Calibri";
+  font-size: 20px;
+}
+
+.scroll-container {
+  margin-top: 12px;
+  height: 180px;
+  overflow-y: scroll;
+  overflow: auto;
+}
+
+button{
+  border-radius: 12px;
+  height: 30px;
+  margin-left: 12px;
+  margin-top: 16px;
+}
+
+.persons{
+  margin-bottom: 6px;
+  font-family: "Calibri";
+  font-size: 20px;
+}
+
+.scroll-container::-webkit-scrollbar{
+  width: 0px;
+}

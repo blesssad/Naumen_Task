@@ -1,0 +1,12 @@
+<div [className]="'text'">
+  Получить статистику
+</div>
+
+<div [className]="'root'">
+  <button (click)="ngOnInit()">Получить данные</button>
+  <div class="scroll-container">
+    <ul>
+      <li [className]="'persons'" *ngFor="let item of dataList">{{item.name}}: {{item.countOfRequests}}</li>
+    </ul>
+  </div>
+</div>
