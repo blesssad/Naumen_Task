@@ -23,3 +23,5 @@
 hs_err_pid*
 replay_pid*
 Naumen_Angular/frontend/src/assets/.gitkeep
+Project_naumen/target/classes/application.properties
+Project_naumen/target/classes/names.txt
